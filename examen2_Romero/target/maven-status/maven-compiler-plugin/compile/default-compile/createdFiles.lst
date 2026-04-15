@@ -1,0 +1,10 @@
+co\edu\poli\examen2_Romero\servicios\CRUD.class
+co\edu\poli\examen2_Romero\vista\App.class
+co\edu\poli\examen2_Romero\controlador\ControlFormInmueble.class
+co\edu\poli\examen2_Romero\servicios\DAOInmueble.class
+co\edu\poli\examen2_Romero\modelo\Apartamento.class
+co\edu\poli\examen2_Romero\servicios\ConexionBD.class
+co\edu\poli\examen2_Romero\modelo\Casa.class
+co\edu\poli\examen2_Romero\modelo\Propietario.class
+co\edu\poli\examen2_Romero\servicios\DAOPropietario.class
+co\edu\poli\examen2_Romero\modelo\Inmueble.class

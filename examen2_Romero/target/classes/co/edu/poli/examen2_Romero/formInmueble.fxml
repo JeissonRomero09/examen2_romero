@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<TabPane prefHeight="320.0" prefWidth="650.0"
+	tabClosingPolicy="UNAVAILABLE" xmlns="http://javafx.com/javafx/17"
+	xmlns:fx="http://javafx.com/fxml/1"
+	fx:controller="co.edu.poli.examen2_Romero.controlador.ControlFormInmueble">
+
+	<tabs>
+
+		<!-- ================= CONSULTAR ================= -->
+		<Tab text="Consultar">
+			<content>
+				<AnchorPane>
+
+					<children>
+
+						<TextField fx:id="txtNumeroConsulta" layoutX="120"
+							layoutY="40" promptText="Número de inmueble" />
+
+						<Button text="Consultar" layoutX="350" layoutY="40"
+							onAction="#consultar" />
+
+						<!--  BOTÓN VENDER -->
+						<Button text="Vender" layoutX="120" layoutY="70"
+							onAction="#venderInmueble" />
+
+						<!--  BOTÓN ALQUILAR -->
+						<Button text="Alquilar" layoutX="220" layoutY="70"
+							onAction="#alquilarInmueble" />
+
+						<TextArea fx:id="txtResultado" layoutX="50" layoutY="110"
+							prefHeight="150" prefWidth="550" editable="false" />
+
+					</children>
+
+				</AnchorPane>
+			</content>
+		</Tab>
+
+		<!-- ================= CREAR ================= -->
+		<Tab text="Crear">
+			<content>
+				<AnchorPane>
+
+					<children>
+
+						<TextField fx:id="txtNumero" layoutX="30" layoutY="30"
+							promptText="Número" />
+
+						<!-- CALENDARIO -->
+						<DatePicker fx:id="dpFecha" layoutX="200" layoutY="30"
+							promptText="Fecha compra" />
+
+						<TextField fx:id="txtPropietarioId" layoutX="30"
+							layoutY="80" promptText="ID Propietario" />
+
+						<TextField fx:id="txtPropietarioNombre" layoutX="200"
+							layoutY="80" promptText="Nombre Propietario" />
+
+						<!-- RADIO BUTTONS -->
+						<RadioButton fx:id="rbCasa" text="Casa" layoutX="30"
+							layoutY="130" toggleGroup="$tipo" />
+
+						<RadioButton fx:id="rbApartamento" text="Apartamento"
+							layoutX="120" layoutY="130" toggleGroup="$tipo" />
+
+						<TextField fx:id="txtExtra" layoutX="260" layoutY="130"
+							promptText="Pisos / Piso" />
+
+						<Button text="Guardar" layoutX="460" layoutY="130"
+							onAction="#guardar" />
+
+					</children>
+
+				</AnchorPane>
+			</content>
+		</Tab>
+
+	</tabs>
+
+</TabPane>
